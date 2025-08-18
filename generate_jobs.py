@@ -13,7 +13,12 @@ urls = [loc.text for loc in soup.find_all("loc") if "/job/" in loc.text]
 # Build job entries
 jobs = []
 for url in urls:
-    job_id = url.split("/")[-1].split("?")[0]  # Extract job ID from URL
+    try:
+        # Extract job title from URL
+        job_id = url.split("/job/")[1].split("/")[0]
+        job_id = job_id.replace("-", " ")  # Optional: make it human-readable
+    except IndexError:
+        job_id = "unknown"
     jobs.append({
         "id": job_id,
         "url": url
