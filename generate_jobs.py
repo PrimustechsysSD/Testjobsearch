@@ -7,31 +7,33 @@ import json
 import time
 
 def scrape_search_metadata():
-    # Configure headless Chrome options
+    # Configure headless Chrome options for CI
     options = Options()
     options.add_argument("--headless")
     options.add_argument("--no-sandbox")
     options.add_argument("--disable-dev-shm-usage")
 
-    # Set up ChromeDriver using Service
+    # Set up ChromeDriver
     service = Service(ChromeDriverManager().install())
     driver = webdriver.Chrome(service=service, options=options)
 
     try:
-        # Load the job search page
+        # Load AVASO job search page
         url = "https://careers.avasotech.com/search/?createNewAlert=false&q=&locationsearch="
         driver.get(url)
-        time.sleep(3)  # Allow time for dynamic content to load
-
-        # Locate job cards
-        job_cards = driver.find_elements(By.CSS_SELECTOR, ".job-result")
+        time.sleep(3)  # Allow dynamic content to load
 
         jobs = []
-        for card in job_cards:
+        job_rows = driver.find_elements(By.CSS_SELECTOR, "tr.data-row")  # Each job is a table row
+
+        for row in job_rows:
             try:
-                title = card.find_element(By.CSS_SELECTOR, ".job-title").text
-                location = card.find_element(By.CSS_SELECTOR, ".job-location").text
-                link = card.find_element(By.CSS_SELECTOR, "a").get_attribute("href")
+                title_elem = row.find_element(By.CSS_SELECTOR, "a.jobTitle-link")
+                title = title_elem.text.strip()
+                link = title_elem.get_attribute("href")
+
+                cells = row.find_elements(By.TAG_NAME, "td")
+                location = cells[1].text.strip() if len(cells) > 1 else "Unknown"
 
                 jobs.append({
                     "title": title,
@@ -39,7 +41,7 @@ def scrape_search_metadata():
                     "link": link
                 })
             except Exception as e:
-                print(f"Error parsing job card: {e}")
+                print(f"⚠️ Skipped row due to error: {e}")
 
         return jobs
 
@@ -54,3 +56,4 @@ if __name__ == "__main__":
     metadata = scrape_search_metadata()
     save_to_json(metadata)
     print(f"✅ Saved {len(metadata)} jobs to jobs.json")
+
