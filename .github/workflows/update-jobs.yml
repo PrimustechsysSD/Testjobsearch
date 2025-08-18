@@ -2,8 +2,13 @@ name: Update Jobs JSON
 
 on:
   schedule:
-    - cron: '*/30 * * * *'  # Runs every 30 minutes
-  workflow_dispatch:        # Allows manual trigger
+    # 🔁 Every 10 minutes during working hours (IST 9 AM – 9 PM → UTC 3:30 AM – 3:30 PM)
+    - cron: '*/10 3-15 * * *'
+
+    # 💤 Every hour during off hours (IST 9 PM – 9 AM → UTC 15:30 PM – 3:30 AM)
+    - cron: '0 0-2,16-23 * * *'
+
+  workflow_dispatch:  # Allows manual trigger
 
 jobs:
   update-jobs:
