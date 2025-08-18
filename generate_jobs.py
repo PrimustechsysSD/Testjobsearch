@@ -7,7 +7,7 @@ import json
 import time
 
 def scrape_search_metadata():
-    # Configure headless Chrome options for CI
+    # Configure headless Chrome options for CI environments
     options = Options()
     options.add_argument("--headless")
     options.add_argument("--no-sandbox")
@@ -18,30 +18,36 @@ def scrape_search_metadata():
     driver = webdriver.Chrome(service=service, options=options)
 
     try:
-        # Load AVASO job search page
-        url = "https://careers.avasotech.com/search/?createNewAlert=false&q=&locationsearch="
-        driver.get(url)
-        time.sleep(3)  # Allow dynamic content to load
-
         jobs = []
-        job_rows = driver.find_elements(By.CSS_SELECTOR, "tr.data-row")  # Each job is a table row
+        startrow = 0
+        while True:
+            # Paginated URL: 25 jobs per page
+            url = f"https://careers.avasotech.com/search/?createNewAlert=false&q=&locationsearch=&startrow={startrow}"
+            driver.get(url)
+            time.sleep(3)  # Allow dynamic content to load
 
-        for row in job_rows:
-            try:
-                title_elem = row.find_element(By.CSS_SELECTOR, "a.jobTitle-link")
-                title = title_elem.text.strip()
-                link = title_elem.get_attribute("href")
+            job_rows = driver.find_elements(By.CSS_SELECTOR, "tr.data-row")
+            if not job_rows:
+                break  # No more jobs found
 
-                cells = row.find_elements(By.TAG_NAME, "td")
-                location = cells[1].text.strip() if len(cells) > 1 else "Unknown"
+            for row in job_rows:
+                try:
+                    title_elem = row.find_element(By.CSS_SELECTOR, "a.jobTitle-link")
+                    title = title_elem.text.strip()
+                    link = title_elem.get_attribute("href")
 
-                jobs.append({
-                    "title": title,
-                    "location": location,
-                    "link": link
-                })
-            except Exception as e:
-                print(f"⚠️ Skipped row due to error: {e}")
+                    cells = row.find_elements(By.TAG_NAME, "td")
+                    location = cells[1].text.strip() if len(cells) > 1 else "Unknown"
+
+                    jobs.append({
+                        "title": title,
+                        "location": location,
+                        "link": link
+                    })
+                except Exception as e:
+                    print(f"⚠️ Skipped row due to error: {e}")
+
+            startrow += 25  # Move to next page
 
         return jobs
 
@@ -56,4 +62,3 @@ if __name__ == "__main__":
     metadata = scrape_search_metadata()
     save_to_json(metadata)
     print(f"✅ Saved {len(metadata)} jobs to jobs.json")
-
