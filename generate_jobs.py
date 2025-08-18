@@ -1,58 +1,84 @@
-import requests
-from bs4 import BeautifulSoup
 import json
 import re
+import time
+import requests
+from bs4 import BeautifulSoup
+from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
+from webdriver_manager.chrome import ChromeDriverManager
 
-# Step 1: Scrape metadata from search results page
-search_url = "https://careers.avasotech.com/search/?createNewAlert=false&q=&locationsearch="
-search_html = requests.get(search_url).text
-soup = BeautifulSoup(search_html, "html.parser")
+# Step 1: Scrape metadata from search page using Selenium
+def scrape_search_metadata():
+    options = Options()
+    options.add_argument("--headless")
+    options.add_argument("--no-sandbox")
+    options.add_argument("--disable-dev-shm-usage")
 
-# Extract job metadata
-job_blocks = soup.find_all("tr")[1:]  # Skip header row
-metadata = []
-for block in job_blocks:
-    cells = block.find_all("td")
-    if len(cells) >= 5:
-        metadata.append({
-            "title": cells[0].text.strip(),
-            "city": cells[1].text.strip(),
-            "country": cells[2].text.strip(),
-            "zip_code": cells[3].text.strip(),
-            "post_date": cells[4].text.strip()
-        })
+    driver = webdriver.Chrome(ChromeDriverManager().install(), options=options)
+    driver.get("https://careers.avasotech.com/search/?createNewAlert=false&q=&locationsearch=")
+    time.sleep(5)  # Wait for JS to render
+
+    rows = driver.find_elements("xpath", "//table[@id='searchresults']/tbody/tr")
+    metadata = []
+    for row in rows:
+        cells = row.find_elements("tag name", "td")
+        link = row.find_element("xpath", ".//a").get_attribute("href")
+        match = re.search(r'/job/.+?/(\d+)/', link)
+        if match and len(cells) >= 5:
+            job_id = match.group(1)
+            metadata.append({
+                "job_id": job_id,
+                "title": cells[0].text.strip(),
+                "city": cells[1].text.strip(),
+                "country": cells[2].text.strip(),
+                "zip_code": cells[3].text.strip(),
+                "post_date": cells[4].text.strip()
+            })
+    driver.quit()
+    return metadata
 
 # Step 2: Scrape job URLs from sitemap
-sitemap_url = "https://careers.avasotech.com/sitemap.xml"
-sitemap_xml = requests.get(sitemap_url).text
-sitemap_soup = BeautifulSoup(sitemap_xml, "xml")
-urls = sitemap_soup.find_all("loc")
+def scrape_sitemap_urls():
+    sitemap_url = "https://careers.avasotech.com/sitemap.xml"
+    sitemap_xml = requests.get(sitemap_url).text
+    soup = BeautifulSoup(sitemap_xml, "xml")
+    urls = soup.find_all("loc")
 
-# Extract job titles from URLs
-job_links = []
-for url in urls:
-    link = url.text.strip()
-    match = re.search(r'/job/(.*?)/\d+/', link)
-    if match:
-        title = match.group(1).replace("-", " ")
-        job_links.append({
-            "title": title.lower(),
-            "url": link
-        })
+    job_links = []
+    for url in urls:
+        link = url.text.strip()
+        match = re.search(r'/job/.+?/(\d+)/', link)
+        if match:
+            job_id = match.group(1)
+            job_links.append({
+                "job_id": job_id,
+                "url": link
+            })
+    return job_links
 
-# Step 3: Merge metadata with URLs
-enriched_jobs = []
-for job in metadata:
-    title_key = job["title"].lower()
-    match = next((j for j in job_links if title_key in j["title"]), None)
-    if match:
-        job["url"] = match["url"]
-        enriched_jobs.append(job)
+# Step 3: Merge metadata with URLs using job_id
+def match_jobs(metadata, job_links):
+    metadata_dict = {job["job_id"]: job for job in metadata}
+    enriched_jobs = []
+    for job in job_links:
+        job_id = job["job_id"]
+        if job_id in metadata_dict:
+            enriched = {**metadata_dict[job_id], **job}
+            enriched_jobs.append(enriched)
+    return enriched_jobs
 
-# Step 4: Save to JSON
-with open("jobs.json", "w", encoding="utf-8") as f:
-    json.dump(enriched_jobs, f, indent=2, ensure_ascii=False)
+# Step 4: Save to JSON only if jobs found
+def save_jobs(jobs):
+    if jobs:
+        with open("jobs.json", "w", encoding="utf-8") as f:
+            json.dump(jobs, f, indent=2, ensure_ascii=False)
+        print(f"✅ Saved {len(jobs)} enriched jobs.")
+    else:
+        print("⚠️ No jobs found. Skipping file write to preserve existing data.")
 
-print(f"✅ Scraped and saved {len(enriched_jobs)} enriched jobs.")
-
-
+# Run the pipeline
+if __name__ == "__main__":
+    metadata = scrape_search_metadata()
+    job_links = scrape_sitemap_urls()
+    enriched_jobs = match_jobs(metadata, job_links)
+    save_jobs(enriched_jobs)
