@@ -14,31 +14,6 @@ def get_chrome_driver():
     service = Service(ChromeDriverManager().install())
     return webdriver.Chrome(service=service, options=options)
 
-def scrape_job_details(url):
-    driver = get_chrome_driver()
-    try:
-        driver.get(url)
-        time.sleep(2)
-
-        def extract_by_label(label):
-            try:
-                elem = driver.find_element(By.XPATH, f"//*[contains(text(),'{label}')]")
-                parent = elem.find_element(By.XPATH, "..")
-                return parent.text.replace(label, "").strip()
-            except:
-                return "Unknown"
-
-        location_details = extract_by_label("Location:")
-        description = extract_by_label("Role Overview:")
-
-        return {
-            "location_details": location_details,
-            "description": description
-        }
-
-    finally:
-        driver.quit()
-
 def scrape_search_metadata():
     driver = get_chrome_driver()
     try:
@@ -69,15 +44,11 @@ def scrape_search_metadata():
                     zip_code = cells[3].text.strip()
                     post_date = cells[4].text.strip()
 
-                    details = scrape_job_details(link)
-
                     jobs.append({
                         "title": title,
                         "city": city,
                         "country": country,
                         "zip_code": zip_code,
-                        "location_details": details["location_details"],
-                        "description": details["description"],
                         "post_date": post_date,
                         "link": link
                     })
@@ -99,4 +70,4 @@ def save_to_json(data, filename="jobs.json"):
 if __name__ == "__main__":
     metadata = scrape_search_metadata()
     save_to_json(metadata)
-    print(f"✅ Saved {len(metadata)} enriched jobs to jobs.json")
+    print(f"✅ Saved {len(metadata)} jobs to jobs.json")
