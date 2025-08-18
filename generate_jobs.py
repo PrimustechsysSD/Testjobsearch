@@ -2,22 +2,25 @@ import requests
 from bs4 import BeautifulSoup
 import json
 
-print("Fetching sitemap...")
+# Fetch sitemap
 sitemap_url = "https://careers.avasotech.com/sitemap.xml"
 response = requests.get(sitemap_url)
-soup = BeautifulSoup(response.content, "xml")
+soup = BeautifulSoup(response.content, "lxml-xml")  # Use lxml parser for XML
 
+# Extract job URLs
+urls = [loc.text for loc in soup.find_all("loc") if "/job/" in loc.text]
+
+# Build job entries
 jobs = []
-for loc in soup.find_all("loc"):
-    url = loc.text
-    if "/job/" in url:
-        title = url.split("/job/")[1].split("/")[0]
-        title = title.replace("-", " ").replace("&", "&amp;").strip()
-        jobs.append({"title": title, "url": url})
+for url in urls:
+    job_id = url.split("/")[-1].split("?")[0]  # Extract job ID from URL
+    jobs.append({
+        "id": job_id,
+        "url": url
+    })
 
-print(f"Found {len(jobs)} jobs")
-
+# Save to jobs.json
 with open("jobs.json", "w") as f:
-    json.dump({"jobs": jobs}, f, indent=2)
+    json.dump(jobs, f, indent=2)
 
-print("jobs.json updated successfully")
+print(f"✅ Found {len(jobs)} jobs. jobs.json updated successfully.")
