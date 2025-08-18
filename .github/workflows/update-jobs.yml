@@ -2,7 +2,7 @@ name: Update Jobs JSON
 
 on:
   schedule:
-    - cron: '0 */3 * * *'  # Runs every 3 hours
+    - cron: '*/30 * * * *'  # Runs every 30 minutes
   workflow_dispatch:        # Allows manual trigger
 
 jobs:
@@ -18,9 +18,8 @@ jobs:
         with:
           python-version: '3.10'
 
-      - name: Install dependencies
-        run: |
-          pip install selenium webdriver-manager beautifulsoup4 requests
+      - name: Install dependencies from requirements.txt
+        run: pip install -r requirements.txt
 
       - name: Run job scraper
         run: python generate_jobs.py
@@ -32,4 +31,3 @@ jobs:
           git add jobs.json
           git diff --cached --quiet || git commit -m "🔄 Auto-update jobs.json"
           git push
-
