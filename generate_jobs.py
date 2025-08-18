@@ -28,16 +28,12 @@ def scrape_job_details(url):
             except:
                 return "Unknown"
 
-        post_date = extract_by_label("Post Date:")
         location_details = extract_by_label("Location:")
         description = extract_by_label("Role Overview:")
 
         return {
-            "post_date": post_date,
             "location_details": location_details,
-            "description": description,
-            "country": "Unknown",  # Not available directly
-            "zip_code": "Unknown"  # Not available directly
+            "description": description
         }
 
     finally:
@@ -60,24 +56,30 @@ def scrape_search_metadata():
 
             for row in job_rows:
                 try:
-                    title_elem = row.find_element(By.CSS_SELECTOR, "a.jobTitle-link")
+                    cells = row.find_elements(By.TAG_NAME, "td")
+                    if len(cells) < 5:
+                        continue
+
+                    title_elem = cells[0].find_element(By.CSS_SELECTOR, "a.jobTitle-link")
                     title = title_elem.text.strip()
                     link = title_elem.get_attribute("href")
 
-                    cells = row.find_elements(By.TAG_NAME, "td")
-                    location = cells[1].text.strip() if len(cells) > 1 else "Unknown"
+                    city = cells[1].text.strip()
+                    country = cells[2].text.strip()
+                    zip_code = cells[3].text.strip()
+                    post_date = cells[4].text.strip()
 
                     details = scrape_job_details(link)
 
                     jobs.append({
                         "title": title,
-                        "location": location,
-                        "link": link,
-                        "post_date": details["post_date"],
+                        "city": city,
+                        "country": country,
+                        "zip_code": zip_code,
                         "location_details": details["location_details"],
-                        "country": details["country"],
-                        "zip_code": details["zip_code"],
-                        "description": details["description"]
+                        "description": details["description"],
+                        "post_date": post_date,
+                        "link": link
                     })
 
                 except Exception as e:
