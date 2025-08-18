@@ -20,18 +20,24 @@ def scrape_job_details(url):
         driver.get(url)
         time.sleep(2)
 
-        def safe_text(selector):
+        def extract_by_label(label):
             try:
-                return driver.find_element(By.CSS_SELECTOR, selector).text.strip()
+                elem = driver.find_element(By.XPATH, f"//*[contains(text(),'{label}')]")
+                parent = elem.find_element(By.XPATH, "..")
+                return parent.text.replace(label, "").strip()
             except:
                 return "Unknown"
 
+        post_date = extract_by_label("Post Date:")
+        location_details = extract_by_label("Location:")
+        description = extract_by_label("Role Overview:")
+
         return {
-            "post_date": safe_text(".job-date"),
-            "location_details": safe_text(".job-location"),
-            "description": safe_text(".job-description"),
-            "country": safe_text(".job-country"),
-            "zip_code": safe_text(".job-postalcode")
+            "post_date": post_date,
+            "location_details": location_details,
+            "description": description,
+            "country": "Unknown",  # Not available directly
+            "zip_code": "Unknown"  # Not available directly
         }
 
     finally:
