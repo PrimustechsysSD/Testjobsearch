@@ -184,14 +184,6 @@
     "link": "https://careers.avasotech.com/job/IT-Support-Engineer-EUC-L2/1167597655/"
   },
   {
-    "title": "IT Support Engineer-EUC L2",
-    "city": "Antwerp",
-    "country": "Belgium",
-    "zip_code": "2030",
-    "post_date": "Aug 4, 2025",
-    "link": "https://careers.avasotech.com/job/IT-Support-Engineer-EUC-L2/1167551855/"
-  },
-  {
     "title": "Field Services Coordinator",
     "city": "Mohali",
     "country": "India",
@@ -286,5 +278,13 @@
     "zip_code": "4024",
     "post_date": "Jul 25, 2025",
     "link": "https://careers.avasotech.com/job/IT-Support-Engineer-EUC-L2/1166960355/"
+  },
+  {
+    "title": "Field Support Engineer",
+    "city": "Prague",
+    "country": "Czech Republic",
+    "zip_code": "-",
+    "post_date": "Jul 13, 2025",
+    "link": "https://careers.avasotech.com/job/Field-Support-Engineer/1149082455/"
   }
 ]
