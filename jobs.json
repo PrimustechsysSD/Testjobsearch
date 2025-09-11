@@ -1,5 +1,21 @@
 [
   {
+    "title": "SME - Audit",
+    "city": "Bangalore",
+    "country": "India",
+    "zip_code": "160066",
+    "post_date": "Sep 11, 2025",
+    "link": "https://careers.avasotech.com/job/SME-Audit/1166150655/"
+  },
+  {
+    "title": "SME - Transfer Pricing",
+    "city": "Mohali",
+    "country": "India",
+    "zip_code": "160066",
+    "post_date": "Sep 11, 2025",
+    "link": "https://careers.avasotech.com/job/SME-Transfer-Pricing/1166138255/"
+  },
+  {
     "title": "Technical Executive",
     "city": "Mohali",
     "country": "India",
@@ -230,21 +246,5 @@
     "zip_code": "160066",
     "post_date": "Aug 14, 2025",
     "link": "https://careers.avasotech.com/job/Sr_-Exe_-FP&A/1166233755/"
-  },
-  {
-    "title": "SME - Transfer Pricing",
-    "city": "Mohali",
-    "country": "India",
-    "zip_code": "160066",
-    "post_date": "Aug 13, 2025",
-    "link": "https://careers.avasotech.com/job/SME-Transfer-Pricing/1166138255/"
-  },
-  {
-    "title": "SME - Audit",
-    "city": "Bangalore",
-    "country": "India",
-    "zip_code": "160066",
-    "post_date": "Aug 13, 2025",
-    "link": "https://careers.avasotech.com/job/SME-Audit/1166150655/"
   }
 ]
