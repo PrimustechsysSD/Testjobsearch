@@ -48,14 +48,6 @@
     "link": "https://careers.avasotech.com/job/Associate-Manager-Service-Delivery/1168654555/"
   },
   {
-    "title": "Accounts Payable Execuitve",
-    "city": "Mohali",
-    "country": "India",
-    "zip_code": "160062",
-    "post_date": "Sep 18, 2025",
-    "link": "https://careers.avasotech.com/job/Accounts-Payable-Execuitve/1325214055/"
-  },
-  {
     "title": "IT Support Engineer-EUC INFRA L2",
     "city": "Tullamore",
     "country": "Ireland",
@@ -72,20 +64,20 @@
     "link": "https://careers.avasotech.com/job/Marketing-Communications-Manager/1325271155/"
   },
   {
+    "title": "Accounts Payable Execuitve",
+    "city": "Mohali",
+    "country": "India",
+    "zip_code": "160062",
+    "post_date": "Sep 18, 2025",
+    "link": "https://careers.avasotech.com/job/Accounts-Payable-Execuitve/1325214055/"
+  },
+  {
     "title": "MIS Analyst",
     "city": "Mohali",
     "country": "India",
     "zip_code": "160066",
     "post_date": "Sep 16, 2025",
     "link": "https://careers.avasotech.com/job/MIS-Analyst/1168440555/"
-  },
-  {
-    "title": "Payroll",
-    "city": "Mohali",
-    "country": "India",
-    "zip_code": "160062",
-    "post_date": "Sep 16, 2025",
-    "link": "https://careers.avasotech.com/job/Payroll/1324969855/"
   },
   {
     "title": "Company Secretary",
@@ -102,6 +94,14 @@
     "zip_code": "48210",
     "post_date": "Sep 16, 2025",
     "link": "https://careers.avasotech.com/job/IT-Support-Engineer-EUCL2/1325025155/"
+  },
+  {
+    "title": "Payroll",
+    "city": "Mohali",
+    "country": "India",
+    "zip_code": "160062",
+    "post_date": "Sep 16, 2025",
+    "link": "https://careers.avasotech.com/job/Payroll/1324969855/"
   },
   {
     "title": "IT Warehouse SME",
@@ -168,14 +168,6 @@
     "link": "https://careers.avasotech.com/job/IT-Support-Engineer-Infra-L1-H&F-Tech/1167975055/"
   },
   {
-    "title": "Logistics & Depot Executive",
-    "city": "Mohali",
-    "country": "India",
-    "zip_code": "160066",
-    "post_date": "Sep 4, 2025",
-    "link": "https://careers.avasotech.com/job/Logistics-&-Depot-Executive/1167727555/"
-  },
-  {
     "title": "Senior Executive- Logistics & Depot",
     "city": "Mohali",
     "country": "India",
@@ -184,12 +176,12 @@
     "link": "https://careers.avasotech.com/job/Senior-Executive-Logistics-&-Depot/1167728155/"
   },
   {
-    "title": "HR Business Partner",
+    "title": "Logistics & Depot Executive",
     "city": "Mohali",
     "country": "India",
-    "zip_code": "140103",
-    "post_date": "Sep 3, 2025",
-    "link": "https://careers.avasotech.com/job/HR-Business-Partner/1153568955/"
+    "zip_code": "160066",
+    "post_date": "Sep 4, 2025",
+    "link": "https://careers.avasotech.com/job/Logistics-&-Depot-Executive/1167727555/"
   },
   {
     "title": "Global Talent Acquisition Executive",
@@ -198,6 +190,14 @@
     "zip_code": "160066",
     "post_date": "Sep 3, 2025",
     "link": "https://careers.avasotech.com/job/Global-Talent-Acquisition-Executive/1165415955/"
+  },
+  {
+    "title": "HR Business Partner",
+    "city": "Mohali",
+    "country": "India",
+    "zip_code": "140103",
+    "post_date": "Sep 3, 2025",
+    "link": "https://careers.avasotech.com/job/HR-Business-Partner/1153568955/"
   },
   {
     "title": "IT Support Engineer-EUC L2",
@@ -248,19 +248,19 @@
     "link": "https://careers.avasotech.com/job/Junior-Business-Support-Analyst/1167146055/"
   },
   {
-    "title": "Senior Executive Global Talent Development",
-    "city": "Mohali",
-    "country": "India",
-    "zip_code": "160066",
-    "post_date": "Aug 26, 2025",
-    "link": "https://careers.avasotech.com/job/Senior-Executive-Global-Talent-Development/1168997355/"
-  },
-  {
     "title": "IT Support Engineer EUC L1",
     "city": "Tokyo (capital)",
     "country": "Japan",
     "zip_code": "100-0005",
     "post_date": "Aug 26, 2025",
     "link": "https://careers.avasotech.com/job/IT-Support-Engineer-EUC-L1/1168993255/"
+  },
+  {
+    "title": "Senior Executive Global Talent Development",
+    "city": "Mohali",
+    "country": "India",
+    "zip_code": "160066",
+    "post_date": "Aug 26, 2025",
+    "link": "https://careers.avasotech.com/job/Senior-Executive-Global-Talent-Development/1168997355/"
   }
 ]
