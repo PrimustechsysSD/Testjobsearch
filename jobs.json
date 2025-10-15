@@ -1,5 +1,29 @@
 [
   {
+    "title": "MIS Analyst",
+    "city": "Mohali",
+    "country": "India",
+    "zip_code": "160066",
+    "post_date": "Oct 15, 2025",
+    "link": "https://careers.avasotech.com/job/MIS-Analyst/1168440555/"
+  },
+  {
+    "title": "Payroll",
+    "city": "Mohali",
+    "country": "India",
+    "zip_code": "160062",
+    "post_date": "Oct 15, 2025",
+    "link": "https://careers.avasotech.com/job/Payroll/1324969855/"
+  },
+  {
+    "title": "Company Secretary",
+    "city": "Ahmedabad",
+    "country": "India",
+    "zip_code": "160066",
+    "post_date": "Oct 15, 2025",
+    "link": "https://careers.avasotech.com/job/Company-Secretary/1324973255/"
+  },
+  {
     "title": "IT Stock Controller",
     "city": "Bangalore",
     "country": "India",
@@ -238,29 +262,5 @@
     "zip_code": "R35FR98",
     "post_date": "Sep 18, 2025",
     "link": "https://careers.avasotech.com/job/IT-Support-Engineer-EUC-INFRA-L2/1325264755/"
-  },
-  {
-    "title": "MIS Analyst",
-    "city": "Mohali",
-    "country": "India",
-    "zip_code": "160066",
-    "post_date": "Sep 16, 2025",
-    "link": "https://careers.avasotech.com/job/MIS-Analyst/1168440555/"
-  },
-  {
-    "title": "Company Secretary",
-    "city": "Ahmedabad",
-    "country": "India",
-    "zip_code": "160066",
-    "post_date": "Sep 16, 2025",
-    "link": "https://careers.avasotech.com/job/Company-Secretary/1324973255/"
-  },
-  {
-    "title": "Payroll",
-    "city": "Mohali",
-    "country": "India",
-    "zip_code": "160062",
-    "post_date": "Sep 16, 2025",
-    "link": "https://careers.avasotech.com/job/Payroll/1324969855/"
   }
 ]
