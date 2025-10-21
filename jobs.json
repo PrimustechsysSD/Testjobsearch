@@ -1,5 +1,13 @@
 [
   {
+    "title": "Technical Buyer",
+    "city": "Bangalore",
+    "country": "India",
+    "zip_code": "560100",
+    "post_date": "Oct 21, 2025",
+    "link": "https://careers.avasotech.com/job/Technical-Buyer/1325457155/"
+  },
+  {
     "title": "IT Support Engineer-EUC L2",
     "city": "Warsaw",
     "country": "Poland",
@@ -246,13 +254,5 @@
     "zip_code": "160066",
     "post_date": "Sep 24, 2025",
     "link": "https://careers.avasotech.com/job/Senior-Executive-Global-Talent-Development/1168997355/"
-  },
-  {
-    "title": "Technical Buyer",
-    "city": "Bangalore",
-    "country": "India",
-    "zip_code": "560100",
-    "post_date": "Sep 22, 2025",
-    "link": "https://careers.avasotech.com/job/Technical-Buyer/1325457155/"
   }
 ]
