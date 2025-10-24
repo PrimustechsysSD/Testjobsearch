@@ -1,5 +1,13 @@
 [
   {
+    "title": "Field Engineer",
+    "city": "Melbourne",
+    "country": "Australia",
+    "zip_code": "140603",
+    "post_date": "Oct 24, 2025",
+    "link": "https://careers.avasotech.com/job/Field-Engineer/1325782055/"
+  },
+  {
     "title": "Senior Executive Global Talent Development",
     "city": "Mohali",
     "country": "India",
@@ -238,13 +246,5 @@
     "zip_code": "105-5518",
     "post_date": "Sep 29, 2025",
     "link": "https://careers.avasotech.com/job/IT-Deskside-Support-Engineer-EUC-L2/1326013555/"
-  },
-  {
-    "title": "Field Engineer",
-    "city": "Melbourne",
-    "country": "Australia",
-    "zip_code": "140603",
-    "post_date": "Sep 25, 2025",
-    "link": "https://careers.avasotech.com/job/Field-Engineer/1325782055/"
   }
 ]
