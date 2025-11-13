@@ -1,5 +1,13 @@
 [
   {
+    "title": "Company Secretary",
+    "city": "Bangalore",
+    "country": "India",
+    "zip_code": "160066",
+    "post_date": "Nov 13, 2025",
+    "link": "https://careers.avasotech.com/job/Company-Secretary/1324973255/"
+  },
+  {
     "title": "IT Stock Controller",
     "city": "Bangalore",
     "country": "India",
@@ -334,13 +342,5 @@
     "zip_code": "160062",
     "post_date": "Oct 17, 2025",
     "link": "https://careers.avasotech.com/job/Subject-Matter-Expert-AR/1327553255/"
-  },
-  {
-    "title": "Company Secretary",
-    "city": "Bangalore",
-    "country": "India",
-    "zip_code": "160066",
-    "post_date": "Oct 15, 2025",
-    "link": "https://careers.avasotech.com/job/Company-Secretary/1324973255/"
   }
 ]
