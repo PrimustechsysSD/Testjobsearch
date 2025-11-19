@@ -1,5 +1,13 @@
 [
   {
+    "title": "Technical Buyer",
+    "city": "Bangalore",
+    "country": "India",
+    "zip_code": "560100",
+    "post_date": "Nov 19, 2025",
+    "link": "https://careers.avasotech.com/job/Technical-Buyer/1325457155/"
+  },
+  {
     "title": "IT Support Engineer - EUC L1",
     "city": "Singapore",
     "country": "Singapore",
@@ -96,20 +104,20 @@
     "link": "https://careers.avasotech.com/job/Executive-Global-People-Shared-Services/1330354755/"
   },
   {
-    "title": "IT Field Engineer",
-    "city": "Melbourne",
-    "country": "Australia",
-    "zip_code": "3000",
-    "post_date": "Nov 10, 2025",
-    "link": "https://careers.avasotech.com/job/IT-Field-Engineer/1330218455/"
-  },
-  {
     "title": "IT Support Engineer-EUC L12",
     "city": "Stuttgart",
     "country": "Germany",
     "zip_code": "70563",
     "post_date": "Nov 10, 2025",
     "link": "https://careers.avasotech.com/job/IT-Support-Engineer-EUC-L12/1330266455/"
+  },
+  {
+    "title": "IT Field Engineer",
+    "city": "Melbourne",
+    "country": "Australia",
+    "zip_code": "3000",
+    "post_date": "Nov 10, 2025",
+    "link": "https://careers.avasotech.com/job/IT-Field-Engineer/1330218455/"
   },
   {
     "title": "Sr. Exe. - FP&A",
@@ -334,13 +342,5 @@
     "zip_code": "160066",
     "post_date": "Oct 23, 2025",
     "link": "https://careers.avasotech.com/job/Senior-Executive-Global-Talent-Development/1168997355/"
-  },
-  {
-    "title": "Technical Buyer",
-    "city": "Bangalore",
-    "country": "India",
-    "zip_code": "560100",
-    "post_date": "Oct 21, 2025",
-    "link": "https://careers.avasotech.com/job/Technical-Buyer/1325457155/"
   }
 ]
