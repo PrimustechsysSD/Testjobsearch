@@ -1,5 +1,13 @@
 [
   {
+    "title": "IT Support Engineer-EUC L2",
+    "city": "Basel",
+    "country": "Switzerland",
+    "zip_code": "4051",
+    "post_date": "Dec 11, 2025",
+    "link": "https://careers.avasotech.com/job/IT-Support-Engineer-EUC-L2/1167597655/"
+  },
+  {
     "title": "Field Engineer",
     "city": "Sydney",
     "country": "Australia",
@@ -14,14 +22,6 @@
     "zip_code": "160066",
     "post_date": "Dec 11, 2025",
     "link": "https://careers.avasotech.com/job/SME-Transfer-Pricing/1166138255/"
-  },
-  {
-    "title": "IT Support Engineer-EUC L2",
-    "city": "Basel",
-    "country": "Switzerland",
-    "zip_code": "4051",
-    "post_date": "Dec 11, 2025",
-    "link": "https://careers.avasotech.com/job/IT-Support-Engineer-EUC-L2/1167597655/"
   },
   {
     "title": "Field Support Engineer- EUC L2",
@@ -64,20 +64,20 @@
     "link": "https://careers.avasotech.com/job/IT-Support-Engineer-EUC-L2/1332450555/"
   },
   {
-    "title": "IT Support Engineer: EUC L2",
-    "city": "Ulm",
-    "country": "Germany",
-    "zip_code": "D-89079",
-    "post_date": "Dec 8, 2025",
-    "link": "https://careers.avasotech.com/job/IT-Support-Engineer-EUC-L2/1332451155/"
-  },
-  {
     "title": "IT Support Engineer-EUCL2",
     "city": "Toamasina",
     "country": "Madagascar",
     "zip_code": "501",
     "post_date": "Dec 8, 2025",
     "link": "https://careers.avasotech.com/job/IT-Support-Engineer-EUCL2/1332449755/"
+  },
+  {
+    "title": "IT Support Engineer: EUC L2",
+    "city": "Ulm",
+    "country": "Germany",
+    "zip_code": "D-89079",
+    "post_date": "Dec 8, 2025",
+    "link": "https://careers.avasotech.com/job/IT-Support-Engineer-EUC-L2/1332451155/"
   },
   {
     "title": "SAP HANA Techno-Functional Consultant",
@@ -208,20 +208,20 @@
     "link": "https://careers.avasotech.com/job/Desktop-Engineer-EUC-L2/1331727955/"
   },
   {
-    "title": "Subject Matter Expert – Payroll",
-    "city": "Mohali",
-    "country": "India",
-    "zip_code": "160062",
-    "post_date": "Nov 25, 2025",
-    "link": "https://careers.avasotech.com/job/Subject-Matter-Expert-Payroll/1331454155/"
-  },
-  {
     "title": "Payroll Team Lead",
     "city": "Mohali",
     "country": "India",
     "zip_code": "160059",
     "post_date": "Nov 25, 2025",
     "link": "https://careers.avasotech.com/job/Payroll-Team-Lead/1331502755/"
+  },
+  {
+    "title": "Subject Matter Expert – Payroll",
+    "city": "Mohali",
+    "country": "India",
+    "zip_code": "160062",
+    "post_date": "Nov 25, 2025",
+    "link": "https://careers.avasotech.com/job/Subject-Matter-Expert-Payroll/1331454155/"
   },
   {
     "title": "Associate Project Manager",
