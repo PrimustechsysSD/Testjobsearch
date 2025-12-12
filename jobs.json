@@ -1,5 +1,21 @@
 [
   {
+    "title": "Project Manager",
+    "city": "Bangalore",
+    "country": "India",
+    "zip_code": "160062",
+    "post_date": "Dec 12, 2025",
+    "link": "https://careers.avasotech.com/job/Project-Manager/1330526955/"
+  },
+  {
+    "title": "Company Secretary",
+    "city": "Bangalore",
+    "country": "India",
+    "zip_code": "160066",
+    "post_date": "Dec 12, 2025",
+    "link": "https://careers.avasotech.com/job/Company-Secretary/1324973255/"
+  },
+  {
     "title": "IT Support Engineer-EUC L2",
     "city": "Basel",
     "country": "Switzerland",
@@ -278,21 +294,5 @@
     "zip_code": "160059",
     "post_date": "Nov 17, 2025",
     "link": "https://careers.avasotech.com/job/Lansweeper-Support-Specialist/1330746155/"
-  },
-  {
-    "title": "Company Secretary",
-    "city": "Bangalore",
-    "country": "India",
-    "zip_code": "160066",
-    "post_date": "Nov 13, 2025",
-    "link": "https://careers.avasotech.com/job/Company-Secretary/1324973255/"
-  },
-  {
-    "title": "Project Manager",
-    "city": "Bangalore",
-    "country": "India",
-    "zip_code": "160062",
-    "post_date": "Nov 13, 2025",
-    "link": "https://careers.avasotech.com/job/Project-Manager/1330526955/"
   }
 ]
