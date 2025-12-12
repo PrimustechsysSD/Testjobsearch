@@ -1,5 +1,13 @@
 [
   {
+    "title": "Company Secretary",
+    "city": "Bangalore",
+    "country": "India",
+    "zip_code": "160066",
+    "post_date": "Dec 12, 2025",
+    "link": "https://careers.avasotech.com/job/Company-Secretary/1324973255/"
+  },
+  {
     "title": "Project Manager",
     "city": "Bangalore",
     "country": "India",
@@ -8,12 +16,12 @@
     "link": "https://careers.avasotech.com/job/Project-Manager/1330526955/"
   },
   {
-    "title": "Company Secretary",
-    "city": "Bangalore",
+    "title": "SME - Transfer Pricing",
+    "city": "Mohali",
     "country": "India",
     "zip_code": "160066",
-    "post_date": "Dec 12, 2025",
-    "link": "https://careers.avasotech.com/job/Company-Secretary/1324973255/"
+    "post_date": "Dec 11, 2025",
+    "link": "https://careers.avasotech.com/job/SME-Transfer-Pricing/1166138255/"
   },
   {
     "title": "IT Support Engineer-EUC L2",
@@ -32,12 +40,12 @@
     "link": "https://careers.avasotech.com/job/Field-Engineer/1327188455/"
   },
   {
-    "title": "SME - Transfer Pricing",
-    "city": "Mohali",
-    "country": "India",
-    "zip_code": "160066",
+    "title": "IT Support Engineer: EUC L2",
+    "city": "Harlow",
+    "country": "United Kingdom",
+    "zip_code": "CM20 2FB",
     "post_date": "Dec 11, 2025",
-    "link": "https://careers.avasotech.com/job/SME-Transfer-Pricing/1166138255/"
+    "link": "https://careers.avasotech.com/job/IT-Support-Engineer-EUC-L2/1332847655/"
   },
   {
     "title": "Field Support Engineer- EUC L2",
@@ -46,14 +54,6 @@
     "zip_code": "08025",
     "post_date": "Dec 11, 2025",
     "link": "https://careers.avasotech.com/job/Field-Support-Engineer-EUC-L2/1332898955/"
-  },
-  {
-    "title": "IT Support Engineer: EUC L2",
-    "city": "Harlow",
-    "country": "United Kingdom",
-    "zip_code": "CM20 2FB",
-    "post_date": "Dec 11, 2025",
-    "link": "https://careers.avasotech.com/job/IT-Support-Engineer-EUC-L2/1332847655/"
   },
   {
     "title": "IT Field Engineer",
@@ -88,20 +88,20 @@
     "link": "https://careers.avasotech.com/job/IT-Support-Engineer-EUC-L2/1332450555/"
   },
   {
-    "title": "IT Support Engineer-EUCL2",
-    "city": "Toamasina",
-    "country": "Madagascar",
-    "zip_code": "501",
-    "post_date": "Dec 8, 2025",
-    "link": "https://careers.avasotech.com/job/IT-Support-Engineer-EUCL2/1332449755/"
-  },
-  {
     "title": "IT Support Engineer: EUC L2",
     "city": "Ulm",
     "country": "Germany",
     "zip_code": "D-89079",
     "post_date": "Dec 8, 2025",
     "link": "https://careers.avasotech.com/job/IT-Support-Engineer-EUC-L2/1332451155/"
+  },
+  {
+    "title": "IT Support Engineer-EUCL2",
+    "city": "Toamasina",
+    "country": "Madagascar",
+    "zip_code": "501",
+    "post_date": "Dec 8, 2025",
+    "link": "https://careers.avasotech.com/job/IT-Support-Engineer-EUCL2/1332449755/"
   },
   {
     "title": "SAP HANA Techno-Functional Consultant",
@@ -136,12 +136,12 @@
     "link": "https://careers.avasotech.com/job/IT-Support-Engineer-EUC-L2/1330063155/"
   },
   {
-    "title": "Mobility Asset Management Specialist",
-    "city": "Bishopsgate",
-    "country": "United Kingdom",
-    "zip_code": "EC2N 4AY",
+    "title": "Global Talent Acquisition Executive",
+    "city": "Mohali",
+    "country": "India",
+    "zip_code": "160066",
     "post_date": "Dec 5, 2025",
-    "link": "https://careers.avasotech.com/job/Mobility-Asset-Management-Specialist/1332321855/"
+    "link": "https://careers.avasotech.com/job/Global-Talent-Acquisition-Executive/1332302555/"
   },
   {
     "title": "IT Support Engineer - EUC L2",
@@ -152,12 +152,12 @@
     "link": "https://careers.avasotech.com/job/IT-Support-Engineer-EUC-L2/1332299955/"
   },
   {
-    "title": "Global Talent Acquisition Executive",
-    "city": "Mohali",
-    "country": "India",
-    "zip_code": "160066",
+    "title": "Mobility Asset Management Specialist",
+    "city": "Bishopsgate",
+    "country": "United Kingdom",
+    "zip_code": "EC2N 4AY",
     "post_date": "Dec 5, 2025",
-    "link": "https://careers.avasotech.com/job/Global-Talent-Acquisition-Executive/1332302555/"
+    "link": "https://careers.avasotech.com/job/Mobility-Asset-Management-Specialist/1332321855/"
   },
   {
     "title": "IT Support Engineer: EUC L1",
@@ -168,20 +168,20 @@
     "link": "https://careers.avasotech.com/job/IT-Support-Engineer-EUC-L1/1332206555/"
   },
   {
-    "title": "IT Warehouse SME",
-    "city": "Bangalore",
-    "country": "India",
-    "zip_code": "560100",
-    "post_date": "Dec 3, 2025",
-    "link": "https://careers.avasotech.com/job/IT-Warehouse-SME/1326550255/"
-  },
-  {
     "title": "Senior Construction Project Manager",
     "city": "Mohali",
     "country": "India",
     "zip_code": "160066",
     "post_date": "Dec 3, 2025",
     "link": "https://careers.avasotech.com/job/Senior-Construction-Project-Manager/1329822455/"
+  },
+  {
+    "title": "IT Warehouse SME",
+    "city": "Bangalore",
+    "country": "India",
+    "zip_code": "560100",
+    "post_date": "Dec 3, 2025",
+    "link": "https://careers.avasotech.com/job/IT-Warehouse-SME/1326550255/"
   },
   {
     "title": "IT Support Engineer: EUC L2",
@@ -200,14 +200,6 @@
     "link": "https://careers.avasotech.com/job/Global-Talent-Acquisition-Executive/1165415955/"
   },
   {
-    "title": "Field Engineer",
-    "city": "Singapore",
-    "country": "Singapore",
-    "zip_code": "642673",
-    "post_date": "Nov 28, 2025",
-    "link": "https://careers.avasotech.com/job/Field-Engineer/1329520355/"
-  },
-  {
     "title": "Global Talent Acquisition Executive",
     "city": "Mohali",
     "country": "India",
@@ -216,12 +208,12 @@
     "link": "https://careers.avasotech.com/job/Global-Talent-Acquisition-Executive/1326230255/"
   },
   {
-    "title": "Field Service Technician",
-    "city": "Bangkok (capital)",
-    "country": "Thailand",
-    "zip_code": "10100",
-    "post_date": "Nov 27, 2025",
-    "link": "https://careers.avasotech.com/job/Field-Service-Technician/1331667455/"
+    "title": "Field Engineer",
+    "city": "Singapore",
+    "country": "Singapore",
+    "zip_code": "642673",
+    "post_date": "Nov 28, 2025",
+    "link": "https://careers.avasotech.com/job/Field-Engineer/1329520355/"
   },
   {
     "title": "Desktop Engineer- EUC L2",
@@ -232,12 +224,12 @@
     "link": "https://careers.avasotech.com/job/Desktop-Engineer-EUC-L2/1331727955/"
   },
   {
-    "title": "Payroll Team Lead",
-    "city": "Mohali",
-    "country": "India",
-    "zip_code": "160059",
-    "post_date": "Nov 25, 2025",
-    "link": "https://careers.avasotech.com/job/Payroll-Team-Lead/1331502755/"
+    "title": "Field Service Technician",
+    "city": "Bangkok (capital)",
+    "country": "Thailand",
+    "zip_code": "10100",
+    "post_date": "Nov 27, 2025",
+    "link": "https://careers.avasotech.com/job/Field-Service-Technician/1331667455/"
   },
   {
     "title": "Subject Matter Expert – Payroll",
@@ -246,6 +238,14 @@
     "zip_code": "160062",
     "post_date": "Nov 25, 2025",
     "link": "https://careers.avasotech.com/job/Subject-Matter-Expert-Payroll/1331454155/"
+  },
+  {
+    "title": "Payroll Team Lead",
+    "city": "Mohali",
+    "country": "India",
+    "zip_code": "160059",
+    "post_date": "Nov 25, 2025",
+    "link": "https://careers.avasotech.com/job/Payroll-Team-Lead/1331502755/"
   },
   {
     "title": "Associate Project Manager",
