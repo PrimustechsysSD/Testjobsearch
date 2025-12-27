@@ -1,5 +1,29 @@
 [
   {
+    "title": "Field Engineer",
+    "city": "Singapore",
+    "country": "Singapore",
+    "zip_code": "642673",
+    "post_date": "Dec 27, 2025",
+    "link": "https://careers.avasotech.com/job/Field-Engineer/1329520355/"
+  },
+  {
+    "title": "Global Talent Acquisition Executive",
+    "city": "Mohali",
+    "country": "India",
+    "zip_code": "160066",
+    "post_date": "Dec 27, 2025",
+    "link": "https://careers.avasotech.com/job/Global-Talent-Acquisition-Executive/1326230255/"
+  },
+  {
+    "title": "Project Coordinator",
+    "city": "Chennai",
+    "country": "India",
+    "zip_code": "600032",
+    "post_date": "Dec 27, 2025",
+    "link": "https://careers.avasotech.com/job/Project-Coordinator/1329548555/"
+  },
+  {
     "title": "Subject Matter Expert – Payroll",
     "city": "Mohali",
     "country": "India",
@@ -318,29 +342,5 @@
     "zip_code": "160066",
     "post_date": "Nov 29, 2025",
     "link": "https://careers.avasotech.com/job/Global-Talent-Acquisition-Executive/1165415955/"
-  },
-  {
-    "title": "Global Talent Acquisition Executive",
-    "city": "Mohali",
-    "country": "India",
-    "zip_code": "160066",
-    "post_date": "Nov 28, 2025",
-    "link": "https://careers.avasotech.com/job/Global-Talent-Acquisition-Executive/1326230255/"
-  },
-  {
-    "title": "Field Engineer",
-    "city": "Singapore",
-    "country": "Singapore",
-    "zip_code": "642673",
-    "post_date": "Nov 28, 2025",
-    "link": "https://careers.avasotech.com/job/Field-Engineer/1329520355/"
-  },
-  {
-    "title": "Project Coordinator",
-    "city": "Chennai",
-    "country": "India",
-    "zip_code": "600032",
-    "post_date": "Nov 28, 2025",
-    "link": "https://careers.avasotech.com/job/Project-Coordinator/1329548555/"
   }
 ]
